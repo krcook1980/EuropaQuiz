@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Europa Quiz</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" class="text">
+</head>
+
+<body>
+  <header class="p-3 mb-5 bg-info text-white text-center">
+    <div class="row">
+      <div class="col">
+        <h4 class="score pt-4"><a href="#highScores" id="scoreLink" class="text-white" alt="link to high scores">High
+            Scores</a>
+      </div>
+      <div class=col-6>
+        <h1 class="h1">Europa Quiz</h1>
+        <small class="text-white">Answer the questions as quickly as possible. You have 60 seconds to complete the quiz.
+
+          <br> Time remaining will decrease 15 sec for wrong answers. Best time wins!
+        </small>
+      </div>
+      <!--timer on right-->
+      <div class="col">
+        <h3 class="time" class="float-end"></h3>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <!-- container for start button-->
+    <div id="startDiv">
+      <div class="row text-center">
+        <div class="col-md-12 display-4 mb-5 text-info">Click start to begin!</div>
+      </div>
+      <div class="row text-center">
+        <div type="button" class="btn btn-info col-md-1 mx-auto" id="startBtn">Start</div></button>
+      </div>
+    </div>
+
+    <!-- container for quiz-->
+    <div id="quizDiv" class="invisible">
+      <!-- Question-->
+      <div class="row">
+        <div class="col-md-12 text-center mb-4 text-info" id="Q" style="font-size:35px">Question
+        </div>
+      </div>
+      <!--Choices-->
+      <div class="row">
+        <div id="choices" class="col-md-3 btn-group-vertical mx-auto">
+          <button type="button" class="choiceBtn btn btn-info mb-2" id="C1">C1</button>
+          <button type="button" class="choiceBtn btn btn-info mb-2" id="C2">C2</button>
+          <button type="button" class="choiceBtn btn btn-info mb-2" id="C3">C3</button>
+          <button type="button" class="choiceBtn btn btn-info mb-2" id="C4">C4</button>
+
+        </div>
+      </div>
+      <!--Correct or Wrong-->
+      <div class="row">
+        <div id="correct" class="col-md-12 text-center text-info"></div>
+      </div>
+    </div>
+    <!--score and leader board to show at the end-->
+    <div id="endScore" class="invisible">
+      <div class="row">
+        <div class="col-md-12 display-4 mb-5 text-center text-info">Your Score: <span id="finalScore"
+            class="col-md-12 display-4 mb-5 text-center"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 display-4 mb-5">
+        </div>
+        <div class="col-md-4 display-4 mb-5">
+          <div class="col">
+            <input type="text" class="form-control nameEntered" placeholder="Enter your name for the leader board">
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-md-4"></div>
+        <button type="button" class="submitBtn btn btn-info mb-2 mx-auto" id="C1">Submit</button>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+
+    <!--Score board and clear score-->
+    <div id="highScores" class="invisible text-info">
+      <div class="row text-center">
+        <div class="col-md-5  mb-5"></div>
+        <div class="col-md-2 mb-5 ">
+          <ol class="text-center mx-auto" id="highList"><h4>HIGH SCORES:</h4>
+          </ol>
+        </div>
+        <div class="col-md-5  mb-5"></div>
+      </div>
+
+      <div class="row text-center"></div>
+      <div class="col-md-5 display-4 mb-5"></div>
+      <div class="col-md-2 display-4 mb-5 mx-auto">
+        <button type="button" class="clearBtn btn btn-info mb-2" id="C1">Clear Scores</button>
+      
+        <button type="button" class="returnBtn btn btn-info mb-2" id="C1"><a
+            href="https://krcook1980.github.io/JavaScriptQuiz/" class="text-white">Return to Quiz</a></button>
+      </div>
+      <div class="col-md-5 display-4 mb-5"></div>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
