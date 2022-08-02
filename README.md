@@ -9,10 +9,10 @@
   * [Props](#props)
   * [Functions](#functions)
 
- ##Overview - 
+##Overview - 
  Short description ... where am I found in the code and what am I used for
 
- ##Related Components - 
+##Related Components - 
 If I am a parent, reference and link the children
 If I am a base component, what am I used in?
 
